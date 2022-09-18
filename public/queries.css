@@ -1,0 +1,250 @@
+/***************************************
+For Smaller laptops (max-width: 1355px)
+*****************************************/
+@media (max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .headingPrimary {
+        font-size: 4.4rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/***************************************
+For Landscape Tablets (max-width: 1200px)
+*****************************************/
+
+@media (max-width: 76em) {
+    html {
+        font-size: 56.2%;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .mainNavList {
+        gap: 2.8rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+    
+    .testimonialContainer {
+        padding: 9.6rem 3.2rem;
+    }
+}
+
+/***************************************
+For Portrait Tablets (max-width: 940px)
+*****************************************/
+
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        height: 2.4rem;
+    }
+
+    .btnMobileNav {
+        display: block;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .mainNav {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*Stepsforhiddinganelement*//*1.Opacity*/opacity: 0;
+        /*2.Pointer-event*/pointer-events: none;
+        /*3.Visibility*/visibility: hidden;
+        transition: all 1s ease-in;
+        -webkit-transition: all 1s ease-in;
+        -moz-transition: all 1s ease-in;
+        -ms-transition: all 1s ease-in;
+        -o-transition: all 1s ease-in;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+}
+
+    .navOpen > .mainNav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+
+    .mainNavList {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .mainNavLink:link, .mainNavLink:visited {
+        font-size: 2.4rem;
+    }
+
+    .navOpen .iconMobileNav[name="menu"] {
+        display: none;
+    }
+
+    .navOpen .iconMobileNav[name="close"] {
+        display: block;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .heroTextBox, .heroImgBox {
+        text-align: center;
+    }
+
+    .heroImage {
+        width: 60%;
+    }
+
+    .btnForm {
+        margin-top: 1.2rem;
+        width: 100%;
+    }
+}
+
+/***************************************
+For Small Tablets (max-width: 704px)
+*****************************************/
+
+@media (max-width: 44em) {
+
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .navCol {
+        grid-column: span 2;
+        margin-top: 3.2rem;
+    }
+
+    .logoCol, .addressCol {
+        grid-column: span 3;
+    }
+}
+
+/***************************************
+For Small Phones (max-width: 550px)
+*****************************************/
+@media (max-width: 35em) {
+
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    .grid--2-cols, .grid--3-cols, .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .sectionHero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 2.4rem;
+    }
+
+    .btn, .btn:link, .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+        
+    .heroImage {
+        width: 80%;
+    }
+
+    .logos img {
+        height: 1.2rem;
+    }
+
+    .subHeading{
+        text-align: center;
+        margin-left: 15rem;
+    }
+
+    .stepTextBox {
+        transform: translateY(-2.4rem);
+        -webkit-transform: translateY(-2.4rem);
+        -moz-transform: translateY(-2.4rem);
+        -ms-transform: translateY(-2.4rem);
+        -o-transform: translateY(-2.4rem);
+}
+
+ .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .formSection {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonialImg {
+        margin-left: 20rem;
+
+    }
+
+    .testimonialName {
+        text-align: center;
+        align-items: center;
+        margin-left: 20rem;
+        
+    }
+
+    .copyRight, .footerHeading {
+       font-size: 1.8rem;
+    }
+
+    .address, .footerLink{
+       font-size: 1.8rem;
+
+    }
+
+    /* .box {
+        margin-left: 10rem;
+    } */
+
+
+    .partnerImg {
+        font-size: 20rem;
+        width: 30%;
+        margin-left: 15rem;
+    }
+}
